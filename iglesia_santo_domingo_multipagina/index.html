@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sitio informativo sobre la Iglesia de Santo Domingo de Tunja, Boyacá.">
+  <title>Inicio Iglesia Santo Domingo - Tunja</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="encabezado">
+    <a class="marca" href="index.html" aria-label="Ir al inicio">
+      <span class="marca-iniciales">S.D</span>
+      <span class="marca-texto">Simón David <small>Proyecto: Santo Domingo · Tunja</small></span>
+    </a>
+    <nav class="navegacion" aria-label="Navegación principal">
+      <a href="index.html" class="activo" aria-current="page">Inicio</a>
+<a href="historia.html">Historia</a>
+<a href="arquitectura.html">Arquitectura</a>
+<a href="galeria.html">Galería</a>
+<a href="ubicacion.html">Ubicación</a>
+<a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+  <main>
+    
+<section class="portada">
+  <div class="portada-contenido">
+    <p class="sobre-titulo">Patrimonio histórico de Tunja</p>
+    <h1>Iglesia de<br><span>Santo Domingo</span></h1>
+    <p class="portada-descripcion">Un lugar donde la historia, la fe y el arte colonial forman parte de la identidad de Boyacá.</p>
+    <a class="boton boton-claro" href="historia.html">Conocer su historia</a>
+  </div>
+  <div class="portada-imagen">
+    <img src="imagenes/images.jfif" alt="Fachada de la Iglesia Santo Domingo">
+    <p>Centro histórico · Tunja, Colombia</p>
+  </div>
+</section>
+<section class="seccion">
+  <div class="titulo-seccion">
+    <p class="sobre-titulo">Bienvenido</p><h2>Un patrimonio que merece ser conocido</h2>
+    <p class="bajada">Explora la historia, la arquitectura, el arte y la ubicación de la Iglesia de Santo Domingo.</p>
+  </div>
+  <div class="tarjetas">
+    <article class="tarjeta"><span class="numero-tarjeta">01</span><h3>Historia</h3><p>Conoce el origen y la importancia del conjunto religioso en Tunja.</p><a href="historia.html">Leer historia →</a></article>
+    <article class="tarjeta"><span class="numero-tarjeta">02</span><h3>Arquitectura</h3><p>Descubre los elementos artísticos y la Capilla del Rosario.</p><a href="arquitectura.html">Ver arquitectura →</a></article>
+    <article class="tarjeta"><span class="numero-tarjeta">03</span><h3>Galería</h3><p>Observa imágenes de los espacios y detalles del templo.</p><a href="galeria.html">Ver galería →</a></article>
+  </div>
+</section>
+
+  </main>
+  <footer class="pie-pagina">
+    <div class="pie-marca"><span class="marca-iniciales">S.D</span><span>Santo Domingo · Tunja</span></div>
+    <p>Proyecto académico · Simón David · Ingeniería de Sistemas</p>
+    <p class="copyright">© 2026 · Sitio web informativo</p>
+  </footer>
+  <script>
+    const formulario = document.getElementById('formulario-contacto');
+    if (formulario) {
+      formulario.addEventListener('submit', function(event) {
+        event.preventDefault();
+        document.getElementById('respuesta-formulario').textContent =
+          '¡Gracias! El formulario se completó correctamente. Esta es una demostración y el mensaje no se envió a un servidor.';
+        formulario.reset();
+      });
+    }
+  </script>
+</body>
+</html>

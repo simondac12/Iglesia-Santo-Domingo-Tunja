@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sitio informativo sobre la Iglesia de Santo Domingo de Tunja, Boyacá.">
+  <title>Ubicación | Iglesia Santo Domingo - Tunja</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="encabezado">
+    <a class="marca" href="index.html" aria-label="Ir al inicio">
+      <span class="marca-iniciales">S.D</span>
+      <span class="marca-texto">Simón David <small>Proyecto: Santo Domingo · Tunja</small></span>
+    </a>
+    <nav class="navegacion" aria-label="Navegación principal">
+      <a href="index.html">Inicio</a>
+<a href="historia.html">Historia</a>
+<a href="arquitectura.html">Arquitectura</a>
+<a href="galeria.html">Galería</a>
+<a href="ubicacion.html" class="activo" aria-current="page">Ubicación</a>
+<a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+  <main>
+    
+<section class="seccion ubicacion">
+  <div class="titulo-seccion"><p class="sobre-titulo">Visítala</p><h2>¿Dónde se encuentra?</h2><p class="bajada">La Iglesia de Santo Domingo está ubicada en el centro histórico de Tunja, Boyacá.</p></div>
+  <div class="ubicacion-contenido">
+    <div class="ubicacion-datos">
+      <p><strong>Dirección</strong><br>Carrera 11 # 19-63, Tunja, Boyacá.</p>
+      <p><strong>Ciudad</strong><br>Tunja, Colombia.</p>
+      <a class="boton boton-oscuro" href="https://www.google.com/maps/search/?api=1&query=Iglesia+Santo+Domingo+Tunja" target="_blank" rel="noopener noreferrer">Ver ubicación en Google Maps</a>
+    </div>
+    <div class="mapa"><iframe src="https://www.google.com/maps?q=Iglesia%20Santo%20Domingo%20Tunja&output=embed" title="Mapa de la Iglesia Santo Domingo en Tunja" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+  </div>
+</section>
+
+  </main>
+  <footer class="pie-pagina">
+    <div class="pie-marca"><span class="marca-iniciales">S.D</span><span>Santo Domingo · Tunja</span></div>
+    <p>Proyecto académico · Simón David · Ingeniería de Sistemas</p>
+    <p class="copyright">© 2026 · Sitio web informativo</p>
+  </footer>
+  <script>
+    const formulario = document.getElementById('formulario-contacto');
+    if (formulario) {
+      formulario.addEventListener('submit', function(event) {
+        event.preventDefault();
+        document.getElementById('respuesta-formulario').textContent =
+          '¡Gracias! El formulario se completó correctamente. Esta es una demostración y el mensaje no se envió a un servidor.';
+        formulario.reset();
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sitio informativo sobre la Iglesia de Santo Domingo de Tunja, Boyacá.">
+  <title>Historia | Iglesia Santo Domingo - Tunja</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="encabezado">
+    <a class="marca" href="index.html" aria-label="Ir al inicio">
+      <span class="marca-iniciales">S.D</span>
+      <span class="marca-texto">Simón David <small>Proyecto: Santo Domingo · Tunja</small></span>
+    </a>
+    <nav class="navegacion" aria-label="Navegación principal">
+      <a href="index.html">Inicio</a>
+<a href="historia.html" class="activo" aria-current="page">Historia</a>
+<a href="arquitectura.html">Arquitectura</a>
+<a href="galeria.html">Galería</a>
+<a href="ubicacion.html">Ubicación</a>
+<a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+  <main>
+    
+<section class="seccion">
+  <div class="titulo-seccion"><p class="sobre-titulo">Conoce este lugar</p><h2>Una historia que permanece</h2><p class="bajada">La Iglesia y el convento de Santo Domingo hacen parte del centro histórico de Tunja.</p></div>
+  <div class="introduccion-contenido">
+    <div class="texto-historia">
+      <p>La Iglesia y el convento de Santo Domingo hacen parte del centro histórico de Tunja. Su origen está relacionado con la llegada de la Orden de Predicadores a la ciudad durante el siglo XVI. Las obras del conjunto religioso comenzaron en la segunda mitad de ese siglo.</p>
+      <p>El templo se convirtió en un espacio importante para la vida religiosa y cultural de la ciudad. A lo largo del tiempo ha conservado elementos artísticos que permiten conocer las técnicas, creencias y expresiones propias del periodo colonial.</p>
+      <p>Su valor histórico no se limita a su función religiosa: también hace parte de la memoria arquitectónica de Tunja y del patrimonio cultural de Colombia.</p>
+    </div>
+    <figure class="imagen-historia"><img src="imagenes/2.jfif" alt="Retablo de madera tallada y dorada">
+  </div>
+</section>
+
+  </main>
+  <footer class="pie-pagina">
+    <div class="pie-marca"><span class="marca-iniciales">S.D</span><span>Santo Domingo · Tunja</span></div>
+    <p>Proyecto académico · Simón David · Ingeniería de Sistemas</p>
+    <p class="copyright">© 2026 · Sitio web informativo</p>
+  </footer>
+  <script>
+    const formulario = document.getElementById('formulario-contacto');
+    if (formulario) {
+      formulario.addEventListener('submit', function(event) {
+        event.preventDefault();
+        document.getElementById('respuesta-formulario').textContent =
+          '¡Gracias! El formulario se completó correctamente. Esta es una demostración y el mensaje no se envió a un servidor.';
+        formulario.reset();
+      });
+    }
+  </script>
+</body>
+</html>

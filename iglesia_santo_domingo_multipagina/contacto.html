@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sitio informativo sobre la Iglesia de Santo Domingo de Tunja, Boyacá.">
+  <title>Contacto | Iglesia Santo Domingo - Tunja</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="encabezado">
+    <a class="marca" href="index.html" aria-label="Ir al inicio">
+      <span class="marca-iniciales">S.D</span>
+      <span class="marca-texto">Simón David <small>Proyecto: Santo Domingo · Tunja</small></span>
+    </a>
+    <nav class="navegacion" aria-label="Navegación principal">
+      <a href="index.html">Inicio</a>
+<a href="historia.html">Historia</a>
+<a href="arquitectura.html">Arquitectura</a>
+<a href="galeria.html">Galería</a>
+<a href="ubicacion.html">Ubicación</a>
+<a href="contacto.html" class="activo" aria-current="page">Contacto</a>
+    </nav>
+  </header>
+  <main>
+    
+<section class="contacto seccion">
+  <div class="contacto-texto">
+    <p class="sobre-titulo">Estamos para orientarte</p><h2>Contacto</h2>
+    <p>Si deseas obtener información sobre el templo o sus actividades religiosas, puedes comunicarte a través de los datos de contacto o completar el siguiente formulario.</p>
+    <div class="contacto-datos" style="margin-top:25px">
+      <div class="dato-contacto"><span class="icono-contacto">TEL</span><div><strong>Teléfono</strong><p>311 473 0360</p></div></div>
+      <div class="dato-contacto"><span class="icono-contacto">DIR</span><div><strong>Dirección</strong><p>Carrera 11 # 19-63, Tunja</p></div></div>
+      <a class="boton boton-claro" href="tel:+573114730360">Llamar</a>
+    </div>
+  </div>
+  <form class="formulario" id="formulario-contacto">
+    <h2>Envíanos un mensaje</h2>
+    <label for="nombre">Nombre completo</label><input id="nombre" name="nombre" type="text" placeholder="Escribe tu nombre" required>
+    <label for="correo">Correo electrónico</label><input id="correo" name="correo" type="email" placeholder="ejemplo@correo.com" required>
+    <label for="asunto">Asunto</label><input id="asunto" name="asunto" type="text" placeholder="Motivo del mensaje" required>
+    <label for="mensaje">Mensaje</label><textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje..." required></textarea>
+    <button class="boton boton-claro" type="submit">Enviar mensaje</button>
+    <p class="mensaje-formulario" id="respuesta-formulario" aria-live="polite"></p>
+    <p style="font-size:11px;color:#64717a;margin-top:8px"></p>
+  </form>
+</section>
+
+  </main>
+  <footer class="pie-pagina">
+    <div class="pie-marca"><span class="marca-iniciales">S.D</span><span>Santo Domingo · Tunja</span></div>
+    <p>Proyecto académico · Simón David · Ingeniería de Sistemas</p>
+    <p class="copyright">© 2026 · Sitio web informativo</p>
+  </footer>
+  <script>
+    const formulario = document.getElementById('formulario-contacto');
+    if (formulario) {
+      formulario.addEventListener('submit', function(event) {
+        event.preventDefault();
+        document.getElementById('respuesta-formulario').textContent =
+          '¡Gracias! El formulario se completó correctamente. Esta es una demostración y el mensaje no se envió a un servidor.';
+        formulario.reset();
+      });
+    }
+  </script>
+</body>
+</html>
